@@ -1,0 +1,18 @@
+en:
+  routes:
+pt-BR:
+  routes:
+    home: inicio
+    new: novo
+    edit: editar
+    destroy: destruir
+    password: senha
+    sign_in: entrar
+    sign_up: cadastrar
+    users: usuarios
+    cancel: cancelar
+    contact: contato
+    contacts: contatos
+    check_out: finalizar
+    help: ajuda
+

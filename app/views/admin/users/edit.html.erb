@@ -1,0 +1,8 @@
+<%= provide :breadcrumb do %>
+    <li><%= link_to t('admin.users'), admin_users_path %><span class="divider">/</span></li>
+    <li class="active"><%= t('users.edit.title') + ": #{@user.email} " %></li>
+<% end %>
+<div class="page-header">
+  <h2><%= t('users.edit.title') + ": #{@user.email} " %></h2>
+</div>
+<%= render :partial => 'form' %>

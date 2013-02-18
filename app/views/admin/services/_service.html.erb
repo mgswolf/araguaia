@@ -1,0 +1,13 @@
+<tr class="service">
+  <td><%= link_to service.id, admin_service_path(service) %></td>
+  <td><%= service.title %></td>
+  <td><%=l service.created_at %></td>
+  <td>
+    <%= link_to t("helpers.links.view"),
+                admin_service_path(service), :class => 'btn btn-mini' %>
+    <%= link_to t("helpers.links.edit"),
+                edit_admin_service_path(service), :class => 'btn btn-info btn-mini' %>
+    <%= link_to t("helpers.links.destroy"),
+                edit_admin_service_path(service), method: :delete, confirm: t('helpers.links.confirm'), :class => 'btn btn-info btn-mini' %>
+  </td>
+</tr>

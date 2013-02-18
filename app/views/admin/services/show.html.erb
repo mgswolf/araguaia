@@ -1,0 +1,31 @@
+<%= provide :breadcrumb do %>
+    <li><%= link_to t('admin.services'), admin_services_path %><span class="divider">/</span></li>
+    <li class="active"><%= @service.title %></li>
+<% end %>
+<div class="page-header">
+  <h2><%= @service.title %></h2>
+</div>
+
+<dl class="dl-horizontal">
+  <dt><strong><%= t_field('service','title') %>:</strong></dt>
+  <dd><%= @service.title %></dd>
+  <dt><strong><%= t_field('service','caption') %>:</strong></dt>
+  <dd><%= @service.caption %></dd>
+  <dt><strong><%= t_field('service','cover') %>:</strong></dt>
+  <dd><%= image_tag @service.cover.url(:thumb) %></dd>
+  <dt><strong><%= t_field('service','description') %>:</strong></dt>
+  <dd><%= @service.description %></dd>
+</dl>
+
+
+<div class="form-actions">
+  <%= link_to t('helpers.links.back', :default => t("helpers.links.back")),
+              admin_services_path, :class => 'btn'  %>
+  <%= link_to t("helpers.links.edit"),
+              edit_admin_service_path(@service), :class => 'btn btn-info' %>
+  <%= link_to t("helpers.links.destroy"),
+              admin_service_path(@service),
+              :method => 'delete',
+              :data => { :confirm => t("helpers.links.confirm", :default => 'Are you sure?') },
+              :class => 'btn btn-danger' %>
+</div>

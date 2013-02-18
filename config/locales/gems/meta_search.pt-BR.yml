@@ -1,0 +1,41 @@
+pt-BR:
+  activerecord:
+    attributes:
+      real_estate:
+        title: "Titulo"
+        city_name: "Cidade"
+  meta_search:
+    or: 'ou'
+    predicates:
+      contains: "%{attribute} contendo"
+      equals: "%{attribute} igual"
+    attributes:
+      real_estate:
+        title: "Título"
+        user_id: "Uśuario"
+        street: "Endereço"
+        number: "Número"
+        neighborhood: "Bairro"
+        city: "Cidade"
+        city_id: "Cidade"
+        city_name: "Cidade"
+        country: "País"
+        rooms: "Quartos"
+        bathrooms: "Banheiros"
+        max_people: "Número de Pessoas"
+        re_type: "Tipo"
+        finality: "Finalidade"
+        description: 'Descrição'
+        double_bed: 'Camas de Casal'
+        single_bed: 'Camas de Solteiro'
+        bunk: 'Beliche'
+        air_conditioning: 'Ar Condicionados'
+        fan: 'Ventiladores'
+        mattress: 'Colchões'
+        parking_spaces: 'Vagas na Garagem'
+        price: valor
+        price_type: tipo de cobrança
+        folder: Capa
+      developer:
+        name_contains: "Developer name-diddly contains-aroonie"
+

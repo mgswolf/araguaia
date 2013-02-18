@@ -1,0 +1,41 @@
+<%= provide(:title,  t('admin.users')) %>
+<%= provide :breadcrumb do %>
+    <li class="active"><%= t('admin.users') %></li>
+<% end %>
+<%= provide :sidebar do %>
+    <%=  form_for [:admin,@search] do |f| %>
+        <li class="nav-header"><%= f.label :email_contains %></li>
+        <li><%= f.text_field :email_contains %></li>
+        <li class="nav-header"><%= f.label :company_contains %></li>
+        <li><%= f.text_field :company_contains %></li>
+        <hr/>
+        <li class="nav-header"><%=t 'helpers.order'  %></li>
+        <%= f.sort_link :id %> |
+        <%= f.sort_link :email %> |
+        <%= f.sort_link :company, t('activerecord.attributes.user.company') %> |
+        <%= f.sort_link :created_at, t('helpers.created_at') %>
+        <hr/>
+        <%= f.submit t('helpers.links.search'), class: 'btn btn-primary' %> <%= link_to t('helpers.links.cancel'), admin_users_path, class: 'btn' %>
+    <% end %>
+<% end %>
+<div class="page-header">
+  <h2><%=  t('admin.users') %></h2>
+</div>
+<table class="table table-striped">
+  <thead>
+  <tr>
+    <th>Id</th>
+    <th><%= t_field('user','company') %></th>
+    <th><%= t_field('user','email') %></th>
+    <th><%= t('helpers.created_at') %></th>
+    <th><%=t 'helpers.actions' %></th>
+  </tr>
+  </thead>
+  <tbody>
+  <%= render @users %>
+  </tbody>
+</table>
+
+<%= link_to t("helpers.links.new"),
+            new_admin_user_path,
+            :class => 'btn btn-primary' %>

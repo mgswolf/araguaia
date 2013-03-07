@@ -1,0 +1,28 @@
+<% provide :title, @job.title %>
+<% provide :h1, @job.title %>
+<% content_for :main_menu do %>
+  <%= render 'shared/main-menu', actual_page: 'jobs' %>
+<% end %>
+<hgroup>
+  <h2 class="titulo-principal"><%= t("titles.jobs.show") %></h2>
+  <h3><%= @job.title %></h3>
+</hgroup>
+<p class="textos-paginas">
+  <%= simple_format @job.description %>
+</p><!-- fim .textos-paginas -->
+
+<% if @job.job_images.any? %>
+<h2 class="titulo-principal"><%= t("jobs.images") %></h2>
+
+<ul class="ul-fancybox">
+  <% @job.job_images.each do |image| %>
+  <li>
+    <%= link_to image_tag(image.pic.url(:medium)), image.pic.url, :"data-fancybox-group" => "gallery", class: "fancybox"  %>
+  </li>
+  <% end %>
+</ul>
+<% end %>
+
+<% content_for :javascripts do %>
+  <%= javascript_include_tag "gallery" %>
+<% end %>

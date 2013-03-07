@@ -14,4 +14,8 @@ module ApplicationHelper
   def t_field(model,field)
     t("activerecord.attributes.#{model}.#{field}")
   end
+
+  def show_image(image)
+    image_tag image unless image.blank? || image.nil?
+  end
 end

@@ -4,8 +4,8 @@
     <li><a href="empresa.html" title="Saiba tudo sobre nossa Empresa">Empresa</a></li>
     <li><a href="servicos.html" title="Conheça um pouco mais sobre nossos serviços">Serviços</a></li>
     <li><a href="equipamentos.html" title="Os melhores Equipamentos para melhor lhe atender">Equipamentos</a></li>
-    <li><a href="laboratorio.html" class="onde-estou" title="Um pouco sobre nosso laboratório">Laboratório</a></li>
-    <li><a href="trabalhos-realizados.html" title="Conheça nossos trabalhos Realizados">Trabalhos Realizados</a></li>
+    <li><a href="laboratorio.html"  title="Um pouco sobre nosso laboratório">Laboratório</a></li>
+    <li><%= link_to t("main-menu.jobs"), jobs_path, class: (actual_page == 'jobs' ?  "onde-estou" : ''), title: t("seo.titles.jobs") %></li>
     <li><a href="relatorios.html" title="Veja seus Relatórios">Relatórios</a></li>
     <li><a href="contato.html" title="Contato">Contato</a></li>
   </ul>

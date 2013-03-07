@@ -3,3 +3,4 @@ pt-BR:
     jobs:
       index: "Trabalhos Realizados"
       index-h1: Trablhos Hidrométricos realizados
+      show: "Trabalhos Realizados"

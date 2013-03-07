@@ -3,6 +3,8 @@ Araguaia::Application.routes.draw do
   get "/jobs", to: "jobs#index", as: :jobs
   get "/job/:id", to: "jobs#show", as: :job
 
+  get "/services", to: "services#index", as: :services
+
   devise_for :users
 
 

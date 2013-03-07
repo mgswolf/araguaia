@@ -1,3 +1,4 @@
 pt-BR:
-  header:
-    phone: Fones
+  shared:
+    header:
+      phone: Fones

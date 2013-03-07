@@ -1,7 +1,14 @@
+<% provide :title, t("titles.jobs.index") %>
+<% provide :h1, t("titles.jobs.index") %>
+<% content_for :main_menu do %>
+    <%= render 'shared/main-menu', actual_page: 'jobs' %>
+<% end %>
+
 <h2 class="titulo-principal ico-trabalhos"><%= t("titles.jobs.index") %></h2>
 
 <ul class="listas">
   <%= render @jobs %>
 </ul><!-- fim .listas -->
-
-<%= will_paginate @jobs %>
+<div class="box-pagination">
+  <%= will_paginate @jobs %>
+</div>

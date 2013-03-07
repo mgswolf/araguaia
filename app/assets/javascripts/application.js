@@ -10,6 +10,10 @@
 // WARNING: THE FIRST BLANK LINE MARKS THE END OF WHAT'S TO BE PROCESSED, ANY BLANK LINE SHOULD
 // GO AFTER THE REQUIRES BELOW.
 //
-//= require jquery
+// require jquery
+//= require jquery-1.8.2.min
 //= require jquery_ujs
+//= require modernizr-2.6.2.min
+//= require jquery.carouFredSel-6.2.0
+//= require jquery.fancybox
 // require_tree .

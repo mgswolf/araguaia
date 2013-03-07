@@ -1,3 +1,5 @@
 pt-BR:
-  titles:
-    back-home: "Voltar para a página inícial"
+  seo:
+    titles:
+      back-home: "Voltar para a página inícial"
+      jobs: "Conheça nossos trabalhos Realizados"

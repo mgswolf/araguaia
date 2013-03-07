@@ -10,7 +10,8 @@
   <meta name="description" content="">
   <meta name="viewport" content="width=device-width">
   <%= stylesheet_link_tag    "application", :media => "all" %>
-
+  <%= javascript_include_tag "application" %>
+  <%= yield :javascripts %>
   <%= csrf_meta_tags %>
 </head>
 <body>
@@ -22,7 +23,7 @@
 <header>
   <%= render 'shared/header' %>
 </header><!-- header -->
-  <%= render 'shared/main-menu' %>
+  <%= yield :main_menu %>
 <section class="pagina">
   <div class="limite">
     <%= yield %>
@@ -35,7 +36,6 @@
   </div><!-- fim .limite -->
 </footer><!-- footer -->
 
-<%= javascript_include_tag "application" %>
-<%= yield :javascripts %>
+
 </body>
 </html>

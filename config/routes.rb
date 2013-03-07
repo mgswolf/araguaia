@@ -1,7 +1,10 @@
 Araguaia::Application.routes.draw do
   root to: "home#index"
-  resources :home, only: :index
+  get "/jobs", to: "jobs#index", as: :jobs
+  get "/job/:id", to: "jobs#show", as: :job
+
   devise_for :users
+
 
 
   # Sample resource route within a namespace:
@@ -9,6 +12,10 @@ Araguaia::Application.routes.draw do
      resources :dashboard, only: :index
      root to: "dashboard#index"
 
+     resources :equipment
+     resources :jobs
+     resources :laboratory_items
+     resources :reports
      resources :services
      resources :users
   #     # Directs /admin/products/* to Admin::ProductsController
@@ -20,6 +27,6 @@ Araguaia::Application.routes.draw do
 end
 
 ActionDispatch::Routing::Translator.translate_from_file(
-    'config/locales/routes.yml', {
+    "app/locales/routes.yml", {
     keep_untranslated_routes: true,
     :no_prefixes => true })

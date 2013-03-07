@@ -1,0 +1,13 @@
+<tr class="job">
+  <td><%= link_to job.id, admin_job_path(job) %></td>
+  <td><%= job.title %></td>
+  <td><%=l job.created_at %></td>
+  <td>
+    <%= link_to t("helpers.links.view"),
+                admin_job_path(job), :class => 'btn btn-mini' %>
+    <%= link_to t("helpers.links.edit"),
+                edit_admin_job_path(job), :class => 'btn btn-info btn-mini' %>
+    <%= link_to t("helpers.links.destroy"),
+                edit_admin_job_path(job), method: :delete, confirm: t('helpers.links.confirm'), :class => 'btn btn-danger btn-mini' %>
+  </td>
+</tr>

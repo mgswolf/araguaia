@@ -1,0 +1,83 @@
+pt-BR:
+  errors: &errors
+    format: ! '%{attribute} %{message}'
+    messages:
+      accepted: deve ser aceito
+      blank: não pode ficar em branco
+      confirmation: não está de acordo com a confirmação
+      empty: não pode ficar vazio
+      equal_to: deve ser igual a %{count}
+      even: deve ser par
+      exclusion: não está disponível
+      greater_than: deve ser maior que %{count}
+      greater_than_or_equal_to: deve ser maior ou igual a %{count}
+      inclusion: não está incluído na lista
+      invalid: não é válido
+      invalid_account: Conta inválida
+      less_than: deve ser menor que %{count}
+      less_than_or_equal_to: deve ser menor ou igual a %{count}
+      not_a_number: não é um número
+      no_account: Sem conta
+      not_an_integer: não é um número inteiro
+      odd: deve ser ímpar
+      record_invalid: ! 'A validação falhou: %{errors}'
+      taken: já está em uso
+      too_long: ! 'é muito longo (máximo: %{count} caracteres)'
+      too_short: ! 'é muito curto (mínimo: %{count} caracteres)'
+      wrong_length: não possui o tamanho esperado (%{count} caracteres)
+    template:
+      body: ! 'Por favor, verifique o(s) seguinte(s) campo(s):'
+      header:
+        one: ! 'Não foi possível gravar %{model}: 1 erro'
+        other: ! 'Não foi possível gravar %{model}: %{count} erros.'
+  activemodel:
+    errors:
+      <<: *errors
+  activerecord:
+    errors:
+      <<: *errors
+    models:
+      contact: 'Contato'
+      equipment: 'Equipamento'
+      job: 'Trabalho'
+      job_image: 'Imagem do Trabalho'
+      laboratory_item: 'Item Laboratório'
+      report: 'Relatório'
+      service: 'Serviço'
+      user: "Usuário"
+    attributes:
+      contact:
+        name: 'Nome'
+        email: Email
+        subject: Assunto
+        phone: Telefone
+        message: Mensagem
+      equipment:
+        title: 'Nome'
+      job:
+        title: Título
+        description: Descrição
+        cover: Capa
+        caption: Subtítulo
+      laboratory_item:
+        title: 'Nome'
+      report:
+        title: Título
+        description: Descrição
+        report_date: Data
+        annex: Anexo
+      service:
+        title: Título
+        description: Descrição
+        cover: Capa
+        caption: Subtítulo
+      user:
+        company: 'Empresa'
+        email: "E-mail"
+        name:  "Nome"
+        username: "Nome da página"
+        password: "Senha"
+        password_confirmation: "Confirmar Senha"
+        current_password: "Senha Atual"
+        remember_me: "Lembre-se de mim"
+        terms: 'Li e aceito os Termos de Uso'

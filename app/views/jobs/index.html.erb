@@ -1,0 +1,7 @@
+<h2 class="titulo-principal ico-trabalhos"><%= t("titles.jobs.index") %></h2>
+
+<ul class="listas">
+  <%= render @jobs %>
+</ul><!-- fim .listas -->
+
+<%= will_paginate @jobs %>

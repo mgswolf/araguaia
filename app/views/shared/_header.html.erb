@@ -1,0 +1,11 @@
+<div class="limite">
+  <%= link_to root_path, class: "logotipo", title: t("seo.titles.back-home") do %>
+    <h1><%= content_for?(:h1) ? (yield :h1) : "Araguaia - Serviços Hidrométricos" %></h1>
+  <% end %><!-- fim logotipo -->
+  <div class="contato-topo">
+    <span><%= t("shared.header.phone") %></span><br/>
+    <p>
+      064-3453-5765 <br/> 064-9293-3530 | 064-9957-5757
+    </p>
+  </div><!-- Fim .contato-topo -->
+</div><!-- fim .limite -->

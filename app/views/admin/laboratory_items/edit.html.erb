@@ -1,0 +1,8 @@
+<%= provide :breadcrumb do %>
+    <li><%= link_to t('admin.laboratory_items'), admin_laboratory_items_path %><span class="divider">/</span></li>
+    <li class="active"><%= t('laboratory_items.edit.title') + ": #{@laboratory_item.title} " %></li>
+<% end %>
+<div class="page-header">
+  <h2><%= t('laboratory_items.edit.title') + ": #{@laboratory_item.title} " %></h2>
+</div>
+<%= render :partial => 'form' %>

@@ -1,0 +1,16 @@
+<%= nested_form_for [:admin,@laboratory_item], :html => { :class => 'form-horizontal' } do |f| %>
+    <%= render 'shared/error_messages', object: f.object %>
+    <div class="control-group">
+      <%= f.label :title, :class => 'control-label' %>
+      <div class="controls">
+        <%= f.text_field :title, :class => 'text_field' %>
+      </div>
+    </div>
+
+    <div class="form-actions">
+      <%= f.submit :class => 'btn btn-primary' %>
+      <%= link_to t("helpers.links.cancel"),
+                  admin_laboratory_items_path, :class => 'btn' %>
+    </div>
+<% end %>
+

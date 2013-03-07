@@ -11,7 +11,58 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20130218184635) do
+ActiveRecord::Schema.define(:version => 20130218235310) do
+
+  create_table "equipment", :force => true do |t|
+    t.string   "title"
+    t.datetime "created_at", :null => false
+    t.datetime "updated_at", :null => false
+  end
+
+  create_table "job_images", :force => true do |t|
+    t.integer  "job_id"
+    t.datetime "created_at",       :null => false
+    t.datetime "updated_at",       :null => false
+    t.string   "pic_file_name"
+    t.string   "pic_content_type"
+    t.integer  "pic_file_size"
+    t.datetime "pic_updated_at"
+  end
+
+  add_index "job_images", ["job_id"], :name => "index_job_images_on_job_id"
+
+  create_table "jobs", :force => true do |t|
+    t.string   "title"
+    t.string   "caption"
+    t.text     "description"
+    t.datetime "created_at",         :null => false
+    t.datetime "updated_at",         :null => false
+    t.string   "cover_file_name"
+    t.string   "cover_content_type"
+    t.integer  "cover_file_size"
+    t.datetime "cover_updated_at"
+  end
+
+  create_table "laboratory_items", :force => true do |t|
+    t.string   "title"
+    t.datetime "created_at", :null => false
+    t.datetime "updated_at", :null => false
+  end
+
+  create_table "reports", :force => true do |t|
+    t.string   "title"
+    t.date     "report_date"
+    t.text     "description"
+    t.integer  "user_id"
+    t.datetime "created_at",         :null => false
+    t.datetime "updated_at",         :null => false
+    t.string   "annex_file_name"
+    t.string   "annex_content_type"
+    t.integer  "annex_file_size"
+    t.datetime "annex_updated_at"
+  end
+
+  add_index "reports", ["user_id"], :name => "index_reports_on_user_id"
 
   create_table "services", :force => true do |t|
     t.string   "title"

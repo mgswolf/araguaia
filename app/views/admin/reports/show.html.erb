@@ -1,0 +1,31 @@
+<%= provide :breadcrumb do %>
+    <li><%= link_to t('admin.reports'), admin_reports_path %><span class="divider">/</span></li>
+    <li class="active"><%= @report.title %></li>
+<% end %>
+<div class="page-header">
+  <h2><%= @report.title %></h2>
+</div>
+
+<dl class="dl-horizontal">
+  <dt><strong><%= t_field('report','title') %>:</strong></dt>
+  <dd><%= @report.title %></dd>
+  <dt><strong><%= t_field('report','report_date') %>:</strong></dt>
+  <dd><%= @report.report_date %></dd>
+  <dt><strong><%= t_field('report','user') %>:</strong></dt>
+  <dd><%= @report.user.name %> - <%= @report.user.company %></dd>
+  <dt><strong><%= t_field('report','annex') %>:</strong></dt>
+  <dd><%= link_to @report.annex_file_name, @report.annex.url %></dd>
+</dl>
+
+
+<div class="form-actions">
+  <%= link_to t('helpers.links.back', :default => t("helpers.links.back")),
+              admin_reports_path, :class => 'btn'  %>
+  <%= link_to t("helpers.links.edit"),
+              edit_admin_report_path(@report), :class => 'btn btn-info' %>
+  <%= link_to t("helpers.links.destroy"),
+              admin_report_path(@report),
+              :method => 'delete',
+              :data => { :confirm => t("helpers.links.confirm", :default => 'Are you sure?') },
+              :class => 'btn btn-danger' %>
+</div>

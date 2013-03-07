@@ -16,6 +16,8 @@ gem 'delayed_job'
 gem 'daemons'
 gem 'whenever', :require => false
 gem 'dynamic_sitemaps'
+gem "rails-i18n"
+gem 'foreigner'
 
 
 group :assets do
@@ -47,6 +49,7 @@ group :test, :development do
   gem "rspec-rails", "~> 2.0"
   gem 'pry'
   gem 'factory_girl_rails'
+  gem 'faker'
 end
 
 group :test do

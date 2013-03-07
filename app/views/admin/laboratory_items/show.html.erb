@@ -1,0 +1,25 @@
+<%= provide :breadcrumb do %>
+    <li><%= link_to t('admin.laboratory_items'), admin_laboratory_items_path %><span class="divider">/</span></li>
+    <li class="active"><%= @laboratory_item.title %></li>
+<% end %>
+<div class="page-header">
+  <h2><%= @laboratory_item.title %></h2>
+</div>
+
+<dl class="dl-horizontal">
+  <dt><strong><%= t_field('laboratory_item','title') %>:</strong></dt>
+  <dd><%= @laboratory_item.title %></dd>
+</dl>
+
+
+<div class="form-actions">
+  <%= link_to t('helpers.links.back', :default => t("helpers.links.back")),
+              admin_laboratory_items_path, :class => 'btn'  %>
+  <%= link_to t("helpers.links.edit"),
+              edit_admin_laboratory_item_path(@laboratory_item), :class => 'btn btn-info' %>
+  <%= link_to t("helpers.links.destroy"),
+              admin_laboratory_item_path(@laboratory_item),
+              :method => 'delete',
+              :data => { :confirm => t("helpers.links.confirm", :default => 'Are you sure?') },
+              :class => 'btn btn-danger' %>
+</div>

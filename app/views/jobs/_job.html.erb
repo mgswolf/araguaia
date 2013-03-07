@@ -1,0 +1,7 @@
+<li>
+  <%= link_to job_path(job) do %>
+    <%= image_tag job.cover.url(:medium) %>
+    <p><%= job.title %></p>
+    <span class="veja-mais"><%= t("jobs.more") %></span>
+  <% end %>
+</li>

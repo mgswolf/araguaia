@@ -1,0 +1,2 @@
+module Admin::LaboratoryItemsHelper
+end

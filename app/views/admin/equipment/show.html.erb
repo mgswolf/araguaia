@@ -1,0 +1,25 @@
+<%= provide :breadcrumb do %>
+    <li><%= link_to t('admin.equipments'), admin_equipment_index_path %><span class="divider">/</span></li>
+    <li class="active"><%= @equipment.title %></li>
+<% end %>
+<div class="page-header">
+  <h2><%= @equipment.title %></h2>
+</div>
+
+<dl class="dl-horizontal">
+  <dt><strong><%= t_field('equipment','title') %>:</strong></dt>
+  <dd><%= @equipment.title %></dd>
+</dl>
+
+
+<div class="form-actions">
+  <%= link_to t('helpers.links.back', :default => t("helpers.links.back")),
+              admin_equipment_index_path, :class => 'btn'  %>
+  <%= link_to t("helpers.links.edit"),
+              edit_admin_equipment_path(@equipment), :class => 'btn btn-info' %>
+  <%= link_to t("helpers.links.destroy"),
+              admin_equipment_path(@equipment),
+              :method => 'delete',
+              :data => { :confirm => t("helpers.links.confirm", :default => 'Are you sure?') },
+              :class => 'btn btn-danger' %>
+</div>

@@ -1,0 +1,49 @@
+<%= nested_form_for [:admin,@job], :html => { :class => 'form-horizontal' } do |f| %>
+    <%= render 'shared/error_messages', object: f.object %>
+    <div class="control-group">
+      <%= f.label :title, :class => 'control-label' %>
+      <div class="controls">
+        <%= f.text_field :title, :class => 'text_field' %>
+      </div>
+    </div>
+
+    <div class="control-group">
+      <%= f.label :caption, :class => 'control-label' %>
+      <div class="controls">
+        <%= f.text_field :caption, :class => 'text_field' %>
+      </div>
+    </div>
+
+    <div class="control-group">
+      <%= image_tag @job.cover.url(:thumb) unless f.object.new_record? %>
+      <%= f.label :cover, :class => 'control-label' %>
+      <div class="controls">
+        <%= f.file_field :cover, :class => 'text_field' %>
+      </div>
+    </div>
+
+
+    <div class="control-group">
+      <%= f.label :description, :class => 'control-label' %>
+      <div class="controls">
+        <%= f.text_area :description, :class => 'text_field' %>
+      </div>
+    </div>
+
+    <div class="well">
+      <%= f.fields_for :job_images do |image_form| %>
+          <%= image_tag image_form.object.pic.url(:thumb) unless image_form.object.new_record? %>
+          <%= image_form.file_field :pic %>
+          <%= image_form.link_to_remove t('actions.remove'), class: "label label-important" %>
+      <% end %>
+      <p><%= f.link_to_add t('actions.add'), :job_images, class: "label label-success" %></p>
+    </div>
+
+
+    <div class="form-actions">
+      <%= f.submit :class => 'btn btn-primary' %>
+      <%= link_to t("helpers.links.cancel"),
+                  admin_jobs_path, :class => 'btn' %>
+    </div>
+<% end %>
+

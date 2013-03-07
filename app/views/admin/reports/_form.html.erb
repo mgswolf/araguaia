@@ -1,0 +1,47 @@
+<%= nested_form_for [:admin,@report], :html => { :class => 'form-horizontal' } do |f| %>
+    <%= render 'shared/error_messages', object: f.object %>
+    <div class="control-group">
+      <%= f.label :title, :class => 'control-label' %>
+      <div class="controls">
+        <%= f.text_field :title, :class => 'text_field' %>
+      </div>
+    </div>
+
+    <div class="control-group">
+      <%= f.label :user_id, :class => 'control-label' %>
+      <div class="controls">
+        <%= f.collection_select :user_id, User.all, :id, :name, :class => 'select' %>
+      </div>
+    </div>
+
+    <div class="control-group">
+      <%= f.label :report_date, :class => 'control-label' %>
+      <div class="controls">
+        <%= f.date_select :report_date, :class => 'select' %>
+      </div>
+    </div>
+
+    <div class="control-group">
+      <%= f.label :annex, :class => 'control-label' %>
+      <div class="controls">
+        <%= f.file_field :annex, :class => 'file_field' %>
+      </div>
+    </div>
+
+
+    <div class="control-group">
+      <%= f.label :description, :class => 'control-label' %>
+      <div class="controls">
+        <%= f.text_area :description, :class => 'text_field' %>
+      </div>
+    </div>
+
+
+
+    <div class="form-actions">
+      <%= f.submit :class => 'btn btn-primary' %>
+      <%= link_to t("helpers.links.cancel"),
+                  admin_reports_path, :class => 'btn' %>
+    </div>
+<% end %>
+

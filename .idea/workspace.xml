@@ -149,10 +149,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="database.example.yml" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="database.example.yml" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/config/database.example.yml">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="6" column="23" selection-start="114" selection-end="114" vertical-scroll-proportion="0.0">
+            <state line="6" column="25" selection-start="113" selection-end="113" vertical-scroll-proportion="0.099228226">
               <folding />
             </state>
           </provider>
@@ -167,10 +167,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="application.css" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="application.css" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/assets/stylesheets/application.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="1242" column="16" selection-start="24137" selection-end="24149" vertical-scroll-proportion="0.8812785">
+            <state line="1242" column="16" selection-start="24137" selection-end="24149" vertical-scroll-proportion="-24.419355">
               <folding />
             </state>
           </provider>
@@ -234,10 +234,10 @@
         <option value="$PROJECT_DIR$/config/nginx.conf" />
         <option value="$PROJECT_DIR$/db/seeds/production.rb" />
         <option value="$PROJECT_DIR$/config/deploy.rb" />
-        <option value="$PROJECT_DIR$/config/database.example.yml" />
         <option value="$PROJECT_DIR$/config/environments/production.rb" />
         <option value="$PROJECT_DIR$/config/database.yml" />
         <option value="$PROJECT_DIR$/app/assets/stylesheets/application.css" />
+        <option value="$PROJECT_DIR$/config/database.example.yml" />
       </list>
     </option>
   </component>
@@ -1447,13 +1447,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/config/database.example.yml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="6" column="23" selection-start="114" selection-end="114" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/config/database.yml">
       <provider selected="true" editor-type-id="text-editor">
         <state line="18" column="35" selection-start="241" selection-end="241" vertical-scroll-proportion="0.0">
@@ -1463,7 +1456,14 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/assets/stylesheets/application.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="1242" column="16" selection-start="24137" selection-end="24149" vertical-scroll-proportion="0.8812785">
+        <state line="1242" column="16" selection-start="24137" selection-end="24149" vertical-scroll-proportion="-24.419355">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/config/database.example.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="6" column="25" selection-start="113" selection-end="113" vertical-scroll-proportion="0.099228226">
           <folding />
         </state>
       </provider>

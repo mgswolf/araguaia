@@ -1,6 +1,6 @@
 production:
   adapter: postgresql
   encoding: utf8
-  database: araguaia
+  database: araguaa
   username: postgres
   password: B6sJCHED

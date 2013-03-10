@@ -149,10 +149,19 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="database.example.yml" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="nginx.conf" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/config/nginx.conf">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="23" column="0" selection-start="452" selection-end="452" vertical-scroll-proportion="0.38037485">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="database.example.yml" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/config/database.example.yml">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="6" column="23" selection-start="114" selection-end="114" vertical-scroll-proportion="0.09667025">
+            <state line="6" column="23" selection-start="114" selection-end="114" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -1424,13 +1433,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/config/nginx.conf">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="23" column="48" selection-start="452" selection-end="452" vertical-scroll-proportion="0.3705693">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/db/seeds/production.rb">
       <provider selected="true" editor-type-id="text-editor">
         <state line="0" column="78" selection-start="21" selection-end="21" vertical-scroll-proportion="0.0">
@@ -1445,6 +1447,13 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/config/database.example.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="6" column="23" selection-start="114" selection-end="114" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/config/deploy.rb">
       <provider selected="true" editor-type-id="text-editor">
         <state line="32" column="63" selection-start="606" selection-end="606" vertical-scroll-proportion="0.0">
@@ -1452,9 +1461,9 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/config/database.example.yml">
+    <entry file="file://$PROJECT_DIR$/config/nginx.conf">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="6" column="23" selection-start="114" selection-end="114" vertical-scroll-proportion="0.09667025">
+        <state line="23" column="0" selection-start="452" selection-end="452" vertical-scroll-proportion="0.38037485">
           <folding />
         </state>
       </provider>

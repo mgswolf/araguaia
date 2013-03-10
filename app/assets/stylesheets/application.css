@@ -1239,7 +1239,8 @@ hgroup h3{
 * html .box-pagination .pagination {
     height: 1%; }
 *:first-child + html .box-pagination .pagination {
-    overflow: hidden; } font-weight: bold;
+    overflow: hidden;
+    font-weight: bold;
 }
 /* Fim configuração Paginação */
 

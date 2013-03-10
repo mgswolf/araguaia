@@ -64,4 +64,20 @@ Araguaia::Application.configure do
   # Log the query plan for queries taking more than this (works
   # with SQLite, MySQL, and PostgreSQL)
   # config.active_record.auto_explain_threshold_in_seconds = 0.5
+
+  config.action_mailer.default_url_options = { :host => 'araguaia.defindex.com.br' }
+
+  config.action_mailer.smtp_settings = {
+      :enable_starttls_auto => true,
+      :address => "smtp.gmail.com",
+      :port => 587,
+      :domain => "mail.google.com",
+      :user_name => "dev.defindex@gmail.com",
+      :password => 'developer123844'
+  }
+
+  config.middleware.use ExceptionNotifier,
+                        sender_address: 'dev.defindex@gmail.com',
+                        exception_recipients: 'mgswolf@gmail.com',
+                        ignore_exceptions: ExceptionNotifier.default_ignore_exceptions # + [RuntimeError]
 end

@@ -46,7 +46,7 @@
     <file path="/reports_controller.rb" changelist="39832f3e-0e7c-49a4-b334-836de5369046" time="1362840250693" ignored="false" />
     <file path="/_report.html.erb" changelist="39832f3e-0e7c-49a4-b334-836de5369046" time="1362702640221" ignored="false" />
     <file path="/application.rb" changelist="39832f3e-0e7c-49a4-b334-836de5369046" time="1362681523072" ignored="false" />
-    <file path="/database.yml" changelist="39832f3e-0e7c-49a4-b334-836de5369046" time="1362682123861" ignored="false" />
+    <file path="/database.yml" changelist="39832f3e-0e7c-49a4-b334-836de5369046" time="1362948724335" ignored="false" />
     <file path="/application.css" changelist="39832f3e-0e7c-49a4-b334-836de5369046" time="1362790716300" ignored="false" />
     <file path="/application.html.erb" changelist="39832f3e-0e7c-49a4-b334-836de5369046" time="1362941258620" ignored="false" />
     <file path="/home_controller.rb" changelist="39832f3e-0e7c-49a4-b334-836de5369046" time="1362944164819" ignored="false" />
@@ -105,7 +105,7 @@
     <file path="/database.example.yml" changelist="39832f3e-0e7c-49a4-b334-836de5369046" time="1362944861589" ignored="false" />
     <file path="/deploy.rb" changelist="39832f3e-0e7c-49a4-b334-836de5369046" time="1362944636853" ignored="false" />
     <file path="/nginx.conf" changelist="39832f3e-0e7c-49a4-b334-836de5369046" time="1362944678439" ignored="false" />
-    <file path="/production.rb" changelist="39832f3e-0e7c-49a4-b334-836de5369046" time="1362944732355" ignored="false" />
+    <file path="/production.rb" changelist="39832f3e-0e7c-49a4-b334-836de5369046" time="1362946324894" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -143,16 +143,7 @@
       <file leaf-file-name="deploy.rb" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/config/deploy.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="32" column="63" selection-start="606" selection-end="606" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="nginx.conf" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/config/nginx.conf">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="23" column="0" selection-start="452" selection-end="452" vertical-scroll-proportion="0.38037485">
+            <state line="37" column="49" selection-start="674" selection-end="674" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -167,10 +158,19 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="application.css" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="database.yml" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/config/database.yml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="18" column="35" selection-start="241" selection-end="241" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="application.css" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/assets/stylesheets/application.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="252" column="28" selection-start="4564" selection-end="4564" vertical-scroll-proportion="-21.774193">
+            <state line="1242" column="16" selection-start="24137" selection-end="24149" vertical-scroll-proportion="0.8812785">
               <folding />
             </state>
           </provider>
@@ -222,13 +222,10 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/db/migrate/20130218184214_create_services.rb" />
-        <option value="$PROJECT_DIR$/app/locales/models/rails.pt-BR.yml" />
         <option value="$PROJECT_DIR$/app/views/admin/services/_form.html.erb" />
         <option value="$PROJECT_DIR$/app/views/admin/services/show.html.erb" />
         <option value="$PROJECT_DIR$/app/locales/views/helpers.yml" />
         <option value="$PROJECT_DIR$/app/models/service.rb" />
-        <option value="$PROJECT_DIR$/app/assets/stylesheets/application.css" />
         <option value="$PROJECT_DIR$/app/models/laboratory_item.rb" />
         <option value="$PROJECT_DIR$/app/locales/views/home.yml" />
         <option value="$PROJECT_DIR$/app/models/job.rb" />
@@ -238,6 +235,9 @@
         <option value="$PROJECT_DIR$/db/seeds/production.rb" />
         <option value="$PROJECT_DIR$/config/deploy.rb" />
         <option value="$PROJECT_DIR$/config/database.example.yml" />
+        <option value="$PROJECT_DIR$/config/environments/production.rb" />
+        <option value="$PROJECT_DIR$/config/database.yml" />
+        <option value="$PROJECT_DIR$/app/assets/stylesheets/application.css" />
       </list>
     </option>
   </component>
@@ -1356,27 +1356,6 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/app/locales/views/helpers.yml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="13" column="48" selection-start="321" selection-end="321" vertical-scroll-proportion="0.2094522">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/db/migrate/20130218184214_create_services.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="14" column="66" selection-start="313" selection-end="313" vertical-scroll-proportion="0.22556391">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/models/laboratory_item.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="20" column="39" selection-start="577" selection-end="577" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/locales/views/home.yml">
       <provider selected="true" editor-type-id="text-editor">
         <state line="8" column="64" selection-start="278" selection-end="278" vertical-scroll-proportion="0.0">
@@ -1394,13 +1373,6 @@
     <entry file="file://$PROJECT_DIR$/app/models/service.rb">
       <provider selected="true" editor-type-id="text-editor">
         <state line="18" column="51" selection-start="566" selection-end="566" vertical-scroll-proportion="0.29001075">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/assets/stylesheets/application.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="252" column="28" selection-start="4564" selection-end="4564" vertical-scroll-proportion="-21.774193">
           <folding />
         </state>
       </provider>
@@ -1447,6 +1419,34 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/config/nginx.conf">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="14" column="53" selection-start="328" selection-end="328" vertical-scroll-proportion="0.23153253">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/config/environments/development.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="37" column="0" selection-start="1372" selection-end="1704" vertical-scroll-proportion="0.40463066">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/config/environments/production.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="83" column="50" selection-start="3109" selection-end="3109" vertical-scroll-proportion="0.9007718">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/config/deploy.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="37" column="49" selection-start="674" selection-end="674" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/config/database.example.yml">
       <provider selected="true" editor-type-id="text-editor">
         <state line="6" column="23" selection-start="114" selection-end="114" vertical-scroll-proportion="0.0">
@@ -1454,16 +1454,16 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/config/deploy.rb">
+    <entry file="file://$PROJECT_DIR$/config/database.yml">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="32" column="63" selection-start="606" selection-end="606" vertical-scroll-proportion="0.0">
+        <state line="18" column="35" selection-start="241" selection-end="241" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/config/nginx.conf">
+    <entry file="file://$PROJECT_DIR$/app/assets/stylesheets/application.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="23" column="0" selection-start="452" selection-end="452" vertical-scroll-proportion="0.38037485">
+        <state line="1242" column="16" selection-start="24137" selection-end="24149" vertical-scroll-proportion="0.8812785">
           <folding />
         </state>
       </provider>

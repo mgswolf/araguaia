@@ -13,7 +13,7 @@
 // require jquery
 //= require modernizr-2.6.2.min
 //= require jquery-1.8.2.min
-// require jquery_ujs
+//= require jquery_ujs
 //= require jquery.carouFredSel-6.2.0
 //= require jquery.fancybox
 //= require gallery

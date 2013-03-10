@@ -5,7 +5,7 @@
 <% end %>
 <h2 class="titulo-principal ico-servicos"><%= t("titles.services.index") %></h2>
 
-<%= render @services %>
+<%= render @services, cache: true %>
 <div class="box-pagination">
   <%= will_paginate @services %>
 </div>

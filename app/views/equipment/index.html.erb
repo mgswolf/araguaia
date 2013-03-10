@@ -4,7 +4,7 @@
     <%= render 'shared/main-menu', actual_page: 'equipment' %>
 <% end %>
 <h2 class="titulo-principal ico-equipamento"><%= t("titles.equipment.index") %></h2>
-<%= render @equipments %>
+<%= render @equipments, cache: true %>
 <div class="box-pagination">
   <%= will_paginate @equipments %>
 </div>

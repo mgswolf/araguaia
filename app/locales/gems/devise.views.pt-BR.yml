@@ -9,6 +9,9 @@ pt-BR:
       edit:
         title: Mudar sua senha
         submit: Mudar minha senha
+        labels:
+          password: Nova Senha
+          password_confirmation: Confirmação da senha
       new:
         title: Esqueceu sua senha?
         submit: Me enviar instruções para reiniciar minha senha

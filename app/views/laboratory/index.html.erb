@@ -4,7 +4,7 @@
     <%= render 'shared/main-menu', actual_page: 'laboratory' %>
 <% end %>
 <h2 class="titulo-principal ico-laboratorio"><%= t("titles.laboratory.index") %></h2>
-<%= render :partial => "laboratory/laboratory_item", :collection => @laboratory_items %>
+<%= render :partial => "laboratory/laboratory_item", :collection => @laboratory_items, cache: true %>
 <div class="box-pagination">
   <%= will_paginate @laboratory_items %>
 </div>

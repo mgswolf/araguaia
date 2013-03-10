@@ -8,5 +8,5 @@
   <%= t("reports.download_list") %> <%= link_to(t('reports.sign_out'), destroy_user_session_path, :method => :delete) %>
 </div><!-- fim .textos-paginas -->
 <ul class="listas-2">
-  <%= render @reports %>
+  <%= render @reports, cache: true %>
 </ul><!-- fim .listas -->

@@ -7,7 +7,7 @@
 <h2 class="titulo-principal ico-trabalhos"><%= t("titles.jobs.index") %></h2>
 
 <ul class="listas">
-  <%= render @jobs %>
+  <%= render @jobs , cache: true %>
 </ul><!-- fim .listas -->
 <div class="box-pagination">
   <%= will_paginate @jobs %>

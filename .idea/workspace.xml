@@ -102,7 +102,7 @@
     <file path="/contact.html.erb" changelist="39832f3e-0e7c-49a4-b334-836de5369046" time="1362939625945" ignored="false" />
     <file path="/contact.text.erb" changelist="39832f3e-0e7c-49a4-b334-836de5369046" time="1362939679956" ignored="false" />
     <file path="/home.yml" changelist="39832f3e-0e7c-49a4-b334-836de5369046" time="1362944041668" ignored="false" />
-    <file path="/database.example.yml" changelist="39832f3e-0e7c-49a4-b334-836de5369046" time="1362944861589" ignored="false" />
+    <file path="/database.example.yml" changelist="39832f3e-0e7c-49a4-b334-836de5369046" time="1362951084415" ignored="false" />
     <file path="/deploy.rb" changelist="39832f3e-0e7c-49a4-b334-836de5369046" time="1362944636853" ignored="false" />
     <file path="/nginx.conf" changelist="39832f3e-0e7c-49a4-b334-836de5369046" time="1362944678439" ignored="false" />
     <file path="/production.rb" changelist="39832f3e-0e7c-49a4-b334-836de5369046" time="1362946324894" ignored="false" />
@@ -152,7 +152,7 @@
       <file leaf-file-name="database.example.yml" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/config/database.example.yml">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="6" column="25" selection-start="113" selection-end="113" vertical-scroll-proportion="0.099228226">
+            <state line="6" column="26" selection-start="114" selection-end="114" vertical-scroll-proportion="0.099228226">
               <folding />
             </state>
           </provider>
@@ -1463,7 +1463,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/config/database.example.yml">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="6" column="25" selection-start="113" selection-end="113" vertical-scroll-proportion="0.099228226">
+        <state line="6" column="26" selection-start="114" selection-end="114" vertical-scroll-proportion="0.099228226">
           <folding />
         </state>
       </provider>

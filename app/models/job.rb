@@ -6,6 +6,7 @@
 #  title              :string(255)
 #  caption            :string(255)
 #  description        :text
+#  slug               :string(255)
 #  created_at         :datetime         not null
 #  updated_at         :datetime         not null
 #  cover_file_name    :string(255)
@@ -21,8 +22,11 @@ class Job < ActiveRecord::Base
   accepts_nested_attributes_for :job_images, :reject_if => :all_blank,
                                 :allow_destroy => true
 
-  attr_accessible :cover
-  has_attached_file :cover, :styles => { :medium => "300x300>", :thumb => "100x100>" }
+  has_attached_file :cover, :styles => { :medium => "320x300>", :thumb => "100x100>" }
 
   validates :title, presence: true
+  extend FriendlyId
+  friendly_id :title, use: :slugged
+
+  scope :recent, -> {order('created_at DESC').limit(5)}
 end

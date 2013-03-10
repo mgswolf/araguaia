@@ -1,0 +1,8 @@
+<%= provide :breadcrumb do %>
+    <li><%= link_to t('admin.companies'), admin_jobs_path %><span class="divider">/</span></li>
+    <li class="active"><%= t('companies.new.title')  %></li>
+<% end %>
+<div class="page-header">
+  <h2><%=t 'companies.new.title' %></h2>
+</div>
+<%= render :partial => 'form' %>

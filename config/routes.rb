@@ -4,25 +4,38 @@ Araguaia::Application.routes.draw do
   get "/job/:id", to: "jobs#show", as: :job
 
   get "/services", to: "services#index", as: :services
+  #get "/service/:id", to: "services#show", as: :service
+
+  get "/reports", to: "reports#index", as: :reports
+  get "/report/:id", to: "reports#show", as: :report
+
+  get "/equipments", to: "equipment#index", as: :equipments
+  #get "/equipment/:id", to: "equipment#show", as: :equipment
+
+  get "/laboratory", to: "laboratory#index", as: :laboratory
+  #get "/laboratory/:id", to: "laboratory#show", as: :laboratory
+
+  get "/contact", to: "contact#new", as: :contact
+  post "/contact", to: "contact#create", as: false
+
+  get "/company", to: "company#index", as: :company
+
 
   devise_for :users
 
 
-
-  # Sample resource route within a namespace:
      namespace :admin do
-     resources :dashboard, only: :index
-     root to: "dashboard#index"
+       root to: "dashboard#index"
 
-     resources :equipment
-     resources :jobs
-     resources :laboratory_items
-     resources :reports
-     resources :services
-     resources :users
-  #     # Directs /admin/products/* to Admin::ProductsController
-  #     # (app/controllers/admin/products_controller.rb)
-  #     resources :products
+       resources :banners
+       resources :companies
+       resources :contacts, only: [:index, :show, :destroy]
+       resources :equipment
+       resources :jobs
+       resources :laboratory_items
+       resources :reports
+       resources :services
+       resources :users
      end
 
 

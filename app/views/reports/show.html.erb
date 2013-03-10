@@ -1,0 +1,12 @@
+<% provide :title, t("titles.reports.show") %>
+<% provide :h1, t("titles.reports.show") %>
+<% content_for :main_menu do %>
+    <%= render 'shared/main-menu', actual_page: 'reports' %>
+<% end %>
+<h2 class="titulo-principal"><%= t("titles.reports.show") %></h2>
+<div class="textos-paginas">
+  <%= t("reports.download_list") %> <%= link_to(t('reports.sign_out'), destroy_user_session_path, :method => :delete) %>
+</div><!-- fim .textos-paginas -->
+<ul class="listas-2">
+  <%= render @reports %>
+</ul><!-- fim .listas -->

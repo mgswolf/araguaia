@@ -1,0 +1,10 @@
+<% provide :title, t("titles.equipment.index") %>
+<% provide :h1, t("titles.equipment.index") %>
+<% content_for :main_menu do %>
+    <%= render 'shared/main-menu', actual_page: 'equipment' %>
+<% end %>
+<h2 class="titulo-principal ico-equipamento"><%= t("titles.equipment.index") %></h2>
+<%= render @equipments %>
+<div class="box-pagination">
+  <%= will_paginate @equipments %>
+</div>

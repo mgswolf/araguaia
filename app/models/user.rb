@@ -8,6 +8,7 @@
 #  company                :string(255)
 #  encrypted_password     :string(255)      default(""), not null
 #  admin                  :boolean          default(FALSE)
+#  slug                   :string(255)
 #  reset_password_token   :string(255)
 #  reset_password_sent_at :datetime
 #  remember_created_at    :datetime
@@ -29,7 +30,11 @@ class User < ActiveRecord::Base
 
   # Setup accessible (or protected) attributes for your model
   attr_accessible :email, :password, :password_confirmation, :remember_me, :name, :company
-  # attr_accessible :title, :body
+
+  has_many :reports
+
   validates :company, presence: true
   validates :name, presence: true
+  extend FriendlyId
+  friendly_id :name, use: :slugged
 end

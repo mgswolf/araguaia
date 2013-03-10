@@ -31,6 +31,9 @@
       <a class="brand" href="/admin">Temporada</a>
       <div class="container-fluid nav-collapse">
         <ul class="nav">
+          <li><%= link_to 'Banners', admin_banners_path %></li>
+          <li><%= link_to t('admin.contacts'), admin_contacts_path %></li>
+          <li><%= link_to t('admin.companies'), admin_companies_path %></li>
           <li><%= link_to t('admin.equipment'), admin_equipment_index_path %></li>
           <li><%= link_to t('admin.laboratory_items'), admin_laboratory_items_path %></li>
           <li><%= link_to t('admin.reports'), admin_reports_path %></li>

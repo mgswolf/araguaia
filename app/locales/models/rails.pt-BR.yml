@@ -46,14 +46,22 @@ pt-BR:
       service: 'Serviço'
       user: "Usuário"
     attributes:
+      banner:
+        cover: Imagem
+      company:
+        title: 'Título'
+        description: Descrição
+        cover: Capa
       contact:
         name: 'Nome'
         email: Email
         subject: Assunto
         phone: Telefone
-        message: Mensagem
+        body: Mensagem
       equipment:
         title: 'Nome'
+        description: Descrição
+        cover: Capa
       job:
         title: Título
         description: Descrição
@@ -61,6 +69,8 @@ pt-BR:
         caption: Subtítulo
       laboratory_item:
         title: 'Nome'
+        description: Descrição
+        cover: Capa
       report:
         title: Título
         description: Descrição
@@ -71,6 +81,7 @@ pt-BR:
         description: Descrição
         cover: Capa
         caption: Subtítulo
+        highlight: Destaque
       user:
         company: 'Empresa'
         email: "E-mail"

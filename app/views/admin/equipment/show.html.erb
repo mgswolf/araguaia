@@ -9,6 +9,10 @@
 <dl class="dl-horizontal">
   <dt><strong><%= t_field('equipment','title') %>:</strong></dt>
   <dd><%= @equipment.title %></dd>
+  <dt><strong><%= t_field('equipment','cover') %>:</strong></dt>
+  <dd><%= image_tag @equipment.cover.url(:thumb) %></dd>
+  <dt><strong><%= t_field('equipment','description') %>:</strong></dt>
+  <dd><%= simple_format @equipment.description %></dd>
 </dl>
 
 

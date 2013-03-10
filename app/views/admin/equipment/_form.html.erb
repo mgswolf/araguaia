@@ -1,9 +1,26 @@
-<%= nested_form_for [:admin,@equipment], :html => { :class => 'form-horizontal' } do |f| %>
+<%= form_for [:admin,@equipment], :html => { :class => 'form-horizontal' } do |f| %>
     <%= render 'shared/error_messages', object: f.object %>
     <div class="control-group">
       <%= f.label :title, :class => 'control-label' %>
       <div class="controls">
         <%= f.text_field :title, :class => 'text_field' %>
+      </div>
+    </div>
+
+    <div class="control-group">
+      <%= image_tag @equipment.cover.url(:thumb) unless f.object.new_record? %>
+      <%= f.label :cover, :class => 'control-label' %>
+      <div class="controls">
+        <%= f.file_field :cover, :class => 'text_field' %>
+        <span class="help-block"><%= t("helpers.size", size: "320x300 pixels") %></span>
+      </div>
+    </div>
+
+
+    <div class="control-group">
+      <%= f.label :description, :class => 'control-label' %>
+      <div class="controls">
+        <%= f.text_area :description, :class => 'text_field' %>
       </div>
     </div>
 

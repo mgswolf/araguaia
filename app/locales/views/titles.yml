@@ -1,6 +1,21 @@
 pt-BR:
   titles:
+    company:
+      index: "Empresa"
+    contact:
+      new: "Contato"
+    equipment:
+      index: "Equipamentos"
     jobs:
       index: "Trabalhos Realizados"
       index-h1: Trablhos Hidrométricos realizados
       show: "Trabalhos Realizados"
+    laboratory:
+      index: Laboratório
+    reports:
+      index: Relatório Hidrométrico
+      show: Confira aqui seus relatórios
+    services:
+      index: Serviços
+
+

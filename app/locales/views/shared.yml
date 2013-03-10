@@ -1,4 +1,7 @@
 pt-BR:
   shared:
+    footer:
+      company: "ARAGUAIA SERVIÇOS HIDROMÉTRICOS - 2013 - Todos os direitos reservados"
+      developer_html: "Desenvolvido por: Defindex"
     header:
       phone: Fones

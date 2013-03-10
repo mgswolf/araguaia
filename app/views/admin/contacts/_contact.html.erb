@@ -1,0 +1,12 @@
+<tr class="contact">
+  <td><%= link_to contact.id, admin_contact_path(contact) %></td>
+  <td><%= contact.email %></td>
+  <td><%= contact.subject %></td>
+  <td><%= localize(contact.created_at, format: :short) %></td>
+  <td>
+    <%= link_to t("helpers.links.view"),
+                admin_contact_path(contact), :class => 'btn btn-mini' %>
+    <%= link_to t("helpers.links.destroy"),
+                admin_contact_path(contact), method: :delete, confirm: t('helpers.links.confirm'), :class => 'btn btn-danger btn-mini' %>
+  </td>
+</tr>

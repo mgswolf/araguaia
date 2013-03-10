@@ -1,0 +1,13 @@
+<tr class="company">
+  <td><%= link_to company.id, admin_company_path(company) %></td>
+  <td><%= company.title %></td>
+  <td><%=l company.created_at %></td>
+  <td>
+    <%= link_to t("helpers.links.view"),
+                admin_company_path(company), :class => 'btn btn-mini' %>
+    <%= link_to t("helpers.links.edit"),
+                edit_admin_company_path(company), :class => 'btn btn-info btn-mini' %>
+    <%= link_to t("helpers.links.destroy"),
+                admin_company_path(company), method: :delete, confirm: t('helpers.links.confirm'), :class => 'btn btn-danger btn-mini' %>
+  </td>
+</tr>

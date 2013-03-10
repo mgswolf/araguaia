@@ -19,6 +19,7 @@
       <%= f.label :cover, :class => 'control-label' %>
       <div class="controls">
         <%= f.file_field :cover, :class => 'text_field' %>
+        <span class="help-block"><%= t("helpers.size", size: "320x300 pixels") %></span>
       </div>
     </div>
 
@@ -27,6 +28,13 @@
       <%= f.label :description, :class => 'control-label' %>
       <div class="controls">
         <%= f.text_area :description, :class => 'text_field' %>
+      </div>
+    </div>
+
+    <div class="control-group">
+      <%= f.label :highlight, :class => 'control-label' %>
+      <div class="controls">
+        <%= f.check_box :highlight, :class => 'checkbox' %>
       </div>
     </div>
 

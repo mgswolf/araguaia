@@ -8,6 +8,7 @@
 #  company                :string(255)
 #  encrypted_password     :string(255)      default(""), not null
 #  admin                  :boolean          default(FALSE)
+#  slug                   :string(255)
 #  reset_password_token   :string(255)
 #  reset_password_sent_at :datetime
 #  remember_created_at    :datetime

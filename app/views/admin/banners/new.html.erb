@@ -1,0 +1,8 @@
+<%= provide :breadcrumb do %>
+    <li><%= link_to 'Banners', admin_banners_path %><span class="divider">/</span></li>
+    <li class="active">Banners</li>
+<% end %>
+<div class="page-header">
+  <h2>Banners</h2>
+</div>
+<%= render :partial => 'form' %>

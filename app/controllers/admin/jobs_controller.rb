@@ -41,7 +41,7 @@ class Admin::JobsController < Admin::BaseController
     if @job.destroy
       redirect_to admin_jobs_path, notice: t('jobs.destroy.notice')
     else
-
+      redirect_to admin_jobs_path, notice: t('jobs.destroy.alert')
     end
   end
 

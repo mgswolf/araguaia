@@ -1,0 +1,30 @@
+pt-BR:
+  flash:
+    contact:
+      create:
+        notice: "Mensagem enviada! logo retornaremos o contato."
+        alert: "A Mensagem não pode ser enviada, por favor verifique o preenchimento dos campos"
+
+    admin:
+      banners:
+        create:
+          alert: "Banner cadastrado com sucesso."
+          notice: "O Banner não pode se cadastrado verifique o preenchimento dos campos."
+        destroy:
+          notice: "Banner excluído com sucesso."
+        update:
+          alert: "O Banner não pode ser atualizado."
+          notice: "Banner atualizado com sucesso"
+      companies:
+        create:
+          alert: "Texto Empresa cadastrado com sucesso."
+          notice: "O Texto Empresa não pode se cadastrado verifique o preenchimento dos campos."
+        destroy:
+          notice: "Texto Empresa excluído com sucesso."
+        update:
+          alert: "O Texto Empresa não pode ser atualizado."
+          notice: "Texto Empresa atualizado com sucesso"
+      contacts:
+        destroy:
+          alert: "O contato não pode ser excluido."
+          notice: "Contato excluído com sucesso."

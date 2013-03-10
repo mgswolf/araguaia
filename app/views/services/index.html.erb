@@ -1,0 +1,11 @@
+<% provide :title, t("titles.services.index") %>
+<% provide :h1, t("titles.services.index") %>
+<% content_for :main_menu do %>
+    <%= render 'shared/main-menu', actual_page: 'services' %>
+<% end %>
+<h2 class="titulo-principal ico-servicos"><%= t("titles.services.index") %></h2>
+
+<%= render @services %>
+<div class="box-pagination">
+  <%= will_paginate @services %>
+</div>

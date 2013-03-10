@@ -1,6 +1,6 @@
 <div class="container">
   <% if object.errors.any? %>
-      <div class="mensagens msg-red">
+      <div class="mensagens alert alert-block">
         <ul>
           <% object.errors.full_messages.each do |msg| %>
               <li><%= msg %></li>

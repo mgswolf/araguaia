@@ -7,6 +7,23 @@
       </div>
     </div>
 
+    <div class="control-group">
+      <%= image_tag @laboratory_item.cover.url(:thumb) unless f.object.new_record? %>
+      <%= f.label :cover, :class => 'control-label' %>
+      <div class="controls">
+        <%= f.file_field :cover, :class => 'text_field' %>
+        <span class="help-block"><%= t("helpers.size", size: "320x300 pixels") %></span>
+      </div>
+    </div>
+
+
+    <div class="control-group">
+      <%= f.label :description, :class => 'control-label' %>
+      <div class="controls">
+        <%= f.text_area :description, :class => 'text_field' %>
+      </div>
+    </div>
+
     <div class="form-actions">
       <%= f.submit :class => 'btn btn-primary' %>
       <%= link_to t("helpers.links.cancel"),

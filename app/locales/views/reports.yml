@@ -1,0 +1,7 @@
+pt-BR:
+  reports:
+    need_login: "Para visualizar seus relatórios, entre com seu e-mail e sua senha. Caso não tenha um cadastro, solicite ao administrador: emaildomax@gmail.com"
+    submit: "Entrar"
+    download_list: Abaixo segue seus relatórios.
+    download_link: Para visualizar o reltório clique aqui.
+    sign_out: "Clique aqui para sair."

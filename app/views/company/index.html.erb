@@ -1,0 +1,11 @@
+<% provide :title, t("titles.company.index") %>
+<% provide :h1, t("titles.company.index") %>
+<% content_for :main_menu do %>
+    <%= render 'shared/main-menu', actual_page: 'company' %>
+<% end %>
+<h2 class="titulo-principal ico-laboratorio"><%= t("titles.company.index") %></h2>
+<%= render :partial => "company/company", :collection => @companies %>
+<div class="box-pagination">
+  <%= will_paginate @companies %>
+</div>
+

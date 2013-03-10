@@ -11,14 +11,20 @@ pt-BR:
     sign_up: cadastrar
     users: usuarios
     cancel: cancelar
+    company: empresa
+    companies: empresa
     contact: contato
     contacts: contatos
     check_out: finalizar
     equipment: equipamentos
+    equipments: equipamentos
     help: ajuda
     job: trabalho
     jobs: trabalhos
     laboratory_items: laboratorio
+    laboratory: laboratorio
+    page: pagina
+    report: relatorios
     reports: relatorios
     services: servicos
     service: servico

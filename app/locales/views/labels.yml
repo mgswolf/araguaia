@@ -1,0 +1,8 @@
+pt-BR:
+  labels:
+    contact:
+       name: Nome
+       email: E-mail
+       phone: Telefone
+       subject: Assunto
+       body: Mensagem

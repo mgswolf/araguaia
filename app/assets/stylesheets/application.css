@@ -247,7 +247,8 @@ hgroup h3{
     background: url("/assets/ico-pdf.png") left center no-repeat;
     padding: 5px 0 5px 55px;
 }
-.listas li a:hover{
+.listas li a:hover,
+.listas li:hover{
     color: #018bca;
 }
 .listas-2 li a span{
@@ -1084,7 +1085,7 @@ hgroup h3{
 }
 .box-login{
     width: 500px;
-    height: 250px;
+    height: 270px;
     float: none;
     margin: 0 auto;
     padding: 10px;
@@ -1320,7 +1321,51 @@ footer .limite a:hover{
    ========================================================================== */
 
 
+.alert {
+    padding: 8px 35px 8px 14px;
+    margin: 20px 0 20px 0;
+    text-shadow: 0 1px 0 rgba(255, 255, 255, 0.5);
+    background-color: #fcf8e3;
+    border: 1px solid #fbeed5;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    border-radius: 4px;
+}
 
+.alert,
+.alert h4 {
+    color: #c09853;
+}
+
+.notice {
+    padding: 8px 35px 8px 14px;
+    margin: 20px 0 20px 0;
+    text-shadow: 0 1px 0 rgba(255, 255, 255, 0.5);
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    border-radius: 4px;
+    color: #468847;
+    background-color: #dff0d8;
+    border-color: #d6e9c6;
+}
+
+.notice h4 {
+    color: #468847;
+}
+
+.alert-block {
+    padding-top: 14px;
+    padding-bottom: 14px;
+}
+
+.alert-block > p,
+.alert-block > ul {
+    margin-bottom: 0;
+}
+
+.alert-block p + p {
+    margin-top: 5px;
+}
 
 
 

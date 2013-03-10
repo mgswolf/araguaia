@@ -1,0 +1,23 @@
+<%= provide(:title,  'Banners') %>
+<%= provide :breadcrumb do %>
+    <li class="active">Banners</li>
+<% end %>
+<div class="page-header">
+  <h2>Banners</h2>
+</div>
+<table class="table table-striped">
+  <thead>
+  <tr>
+    <th>Id</th>
+    <th><%= t_field('banner','cover') %></th>
+    <th><%= t('helpers.created_at') %></th>
+    <th><%=t 'helpers.actions' %></th>
+  </tr>
+  </thead>
+  <tbody>
+  <%= render @banners %>
+  </tbody>
+</table>
+<%= link_to t("helpers.links.new"),
+            new_admin_banner_path,
+            :class => 'btn btn-primary' %>

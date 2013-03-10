@@ -1,17 +1,31 @@
-<h2>Sign in</h2>
-
-<%= form_for(resource, :as => resource_name, :url => session_path(resource_name)) do |f| %>
-  <div><%= f.label :email %><br />
-  <%= f.email_field :email, :autofocus => true %></div>
-
-  <div><%= f.label :password %><br />
-  <%= f.password_field :password %></div>
-
-  <% if devise_mapping.rememberable? -%>
-    <div><%= f.check_box :remember_me %> <%= f.label :remember_me %></div>
-  <% end -%>
-
-  <div><%= f.submit "Sign in" %></div>
+<% provide :title, t("devise.sessions.new.title") %>
+<% provide :h1, t("devise.sessions.new.title") %>
+<% content_for :main_menu do %>
+    <%= render 'shared/main-menu', actual_page: 'reports' %>
 <% end %>
-
-<%= render "devise/shared/links" %>
+<h2 class="titulo-principal"><%= t("devise.sessions.new.title") %></h2>
+<section class="content-form box-login">
+  <%= form_for(resource, :as => resource_name, :url => session_path(resource_name)) do |f| %>
+      <fieldset>
+        <div>
+          <%= f.label :email %>
+          <%= f.email_field :email, :required => true %>
+        </div>
+        <div>
+          <%= f.label :password %>
+          <%= f.password_field :password, :required => true %>
+        </div>
+        <% if devise_mapping.rememberable? -%>
+            <div>
+              <%= f.label :remember_me, class: "checkbox" do %>
+                  <%= f.check_box :remember_me %> <%= User.human_attribute_name(:remember_me) %>
+              <% end %>
+            </div>
+        <% end -%>
+        <span><%= t("helpers.all_needed") %></span>
+        <%= f.submit t("reports.submit"), class: "button okay-colored", disable_with: t("helpers.disable_with") %>
+      </fieldset>
+  <% end %>
+  <br />
+  <%= link_to t("devise.links.forgot"), new_password_path(resource_name) %>
+</section><!-- Fim section conten-form -->

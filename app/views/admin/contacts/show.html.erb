@@ -1,0 +1,31 @@
+<%= provide :breadcrumb do %>
+    <li><%= link_to t('admin.contacts'), admin_contacts_path %><span class="divider">/</span></li>
+    <li class="active"><%= @contact.email %></li>
+<% end %>
+<div class="page-header">
+  <h2><%= @contact.email %></h2>
+</div>
+
+<dl class="dl-horizontal">
+  <dt><strong><%= t_field('contact','name') %>:</strong></dt>
+  <dd><%= @contact.name %></dd>
+  <dt><strong><%= t_field('contact','email') %>:</strong></dt>
+  <dd><%= @contact.email %></dd>
+  <dt><strong><%= t_field('contact','subject') %>:</strong></dt>
+  <dd><%= @contact.subject %></dd>
+  <dt><strong><%= t_field('contact','phone') %>:</strong></dt>
+  <dd><%= @contact.phone %></dd>
+  <dt><strong><%= t_field('contact','body') %>:</strong></dt>
+  <dd><%= @contact.body %></dd>
+</dl>
+
+
+<div class="form-actions">
+  <%= link_to t('helpers.links.back', :default => t("helpers.links.back")),
+              admin_contacts_path, :class => 'btn'  %>
+  <%= link_to t("helpers.links.destroy"),
+              admin_contact_path(@contact),
+              :method => 'delete',
+              :data => { :confirm => t("helpers.links.confirm", :default => 'Are you sure?') },
+              :class => 'btn btn-danger' %>
+</div>

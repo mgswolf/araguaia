@@ -1,0 +1,13 @@
+pt-BR:
+  helpers:
+    all_needed: Todos os campos são obrigatórios
+    all_*_needed: Todos os campos com asterisco (*) são obrigatórios
+    disable_with: "Entrando..."
+    false: Não
+    size: "Dimensões:  %{size}"
+    submit:
+      session:
+        create: "Entrar"
+      contact:
+        create: "Enviar"
+    true: Sim

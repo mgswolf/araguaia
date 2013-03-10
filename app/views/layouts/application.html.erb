@@ -6,12 +6,11 @@
 <head>
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-  <title><%= content_for?(:title) ? (yield :title) : "Araguaia - Serviços Hidrométricos - Laboratório de Hidrossedimentometria"  %></title>
+  <title><%= content_for?(:title) ? (yield :title)+ " - Araguaia - Serviços Hidrométricos - Laboratório de Hidrossedimentometria" : "Araguaia - Serviços Hidrométricos - Laboratório de Hidrossedimentometria"  %></title>
   <meta name="description" content="">
   <meta name="viewport" content="width=device-width">
   <%= stylesheet_link_tag    "application", :media => "all" %>
-  <%= javascript_include_tag "application" %>
-  <%= yield :javascripts %>
+
   <%= csrf_meta_tags %>
 </head>
 <body>
@@ -26,16 +25,18 @@
   <%= yield :main_menu %>
 <section class="pagina">
   <div class="limite">
+    <% flash.each do |key, msg| %>
+        <div class="message <%= key %>"><%= msg %></div>
+    <% end %>
     <%= yield %>
   </div><!-- fim limite -->
 </section><!-- fim .pagina -->
 <footer>
-  <div class="limite">
-    <p>ARAGUAIA SERVIÇOS HIDROMÉTRICOS - 2013 - Todos os direitos reservados</p>
-    <a href="" title="">Desenvolvido por: DefIndex</a>
-  </div><!-- fim .limite -->
+  <%= render "shared/footer" %>
 </footer><!-- footer -->
-
+<%= javascript_include_tag "application" %>
+<%#= yield :javascripts %>
+<%#= javascript_include_tag "plugins","main" %>
 
 </body>
 </html>

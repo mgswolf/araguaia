@@ -1,0 +1,10 @@
+<% provide :title, @equipment.title %>
+<% provide :h1, @equipment.title %>
+<% content_for :main_menu do %>
+    <%= render 'shared/main-menu', actual_page: 'equipment' %>
+<% end %>
+<h2 class="titulo-principal"><%= @equipment.title %></h2>
+<div class="textos-paginas">
+  <%= show_image(@equipment.cover(:medium)) %>
+  <%= simple_format @equipment.description %>
+</div><!-- fim .textos-paginas -->

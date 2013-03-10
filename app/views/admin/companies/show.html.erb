@@ -1,0 +1,29 @@
+<%= provide :breadcrumb do %>
+    <li><%= link_to t('admin.company'), admin_companies_path %><span class="divider">/</span></li>
+    <li class="active"><%= @company.title %></li>
+<% end %>
+<div class="page-header">
+  <h2><%= @company.title %></h2>
+</div>
+
+<dl class="dl-horizontal">
+  <dt><strong><%= t_field('company','title') %>:</strong></dt>
+  <dd><%= @company.title %></dd>
+  <dt><strong><%= t_field('company','cover') %>:</strong></dt>
+  <dd><%= image_tag @company.cover.url(:thumb) %></dd>
+  <dt><strong><%= t_field('company','description') %>:</strong></dt>
+  <dd><%= simple_format @company.description %></dd>
+</dl>
+
+
+<div class="form-actions">
+  <%= link_to t('helpers.links.back', :default => t("helpers.links.back")),
+              admin_companies_path, :class => 'btn'  %>
+  <%= link_to t("helpers.links.edit"),
+              edit_admin_company_path(@company), :class => 'btn btn-info' %>
+  <%= link_to t("helpers.links.destroy"),
+              admin_company_path(@company),
+              :method => 'delete',
+              :data => { :confirm => t("helpers.links.confirm", :default => 'Are you sure?') },
+              :class => 'btn btn-danger' %>
+</div>

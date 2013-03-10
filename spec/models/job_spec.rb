@@ -6,6 +6,7 @@
 #  title              :string(255)
 #  caption            :string(255)
 #  description        :text
+#  slug               :string(255)
 #  created_at         :datetime         not null
 #  updated_at         :datetime         not null
 #  cover_file_name    :string(255)

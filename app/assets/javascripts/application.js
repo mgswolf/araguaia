@@ -11,9 +11,13 @@
 // GO AFTER THE REQUIRES BELOW.
 //
 // require jquery
-//= require jquery-1.8.2.min
-//= require jquery_ujs
 //= require modernizr-2.6.2.min
+//= require jquery-1.8.2.min
+// require jquery_ujs
 //= require jquery.carouFredSel-6.2.0
 //= require jquery.fancybox
+//= require gallery
+//= require carousel
+//= require plugins
+//= require main
 // require_tree .

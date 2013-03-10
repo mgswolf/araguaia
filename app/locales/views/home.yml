@@ -1,0 +1,9 @@
+pt-BR:
+  home:
+    jobs: "Trabalhos Recentes"
+    laboratory: "Laboratório"
+    services: "Serviços"
+    see_more:
+      jobs: "Veja mais de nossos trabalhos realizados"
+      laboratory: "Saiba mais sobre nosso laboratório"
+      services: "Confira mais sobre como trabalhamos"

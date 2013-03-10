@@ -1,0 +1,25 @@
+<%= provide :breadcrumb do %>
+    <li><%= link_to 'Banners', admin_banners_path %><span class="divider">/</span></li>
+    <li class="active"><%= @banner.id %></li>
+<% end %>
+
+<dl class="dl-horizontal">
+  <dt><strong><%= t_field('banner','id') %>:</strong></dt>
+  <dd><%= @banner.id %></dd>
+  <dt><strong><%= t_field('banner','cover') %>:</strong></dt>
+  <dd><%= image_tag @banner.cover(:medium) %></dd>
+</dl>
+
+
+<div class="form-actions">
+  <%= link_to t('helpers.links.back', :default => t("helpers.links.back")),
+              admin_banners_path, :class => 'btn'  %>
+  <%= link_to t("helpers.links.edit"),
+              edit_admin_banner_path(@banner), :class => 'btn btn-info' %>
+  <%= link_to t("helpers.links.destroy"),
+              admin_banner_path(@banner),
+              :method => 'delete',
+              :data => { :confirm => t("helpers.links.confirm", :default => 'Are you sure?') },
+              :class => 'btn btn-danger' %>
+</div>
+

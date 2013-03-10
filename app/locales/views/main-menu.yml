@@ -1,3 +1,10 @@
 pt-BR:
   main-menu:
+    company: "Empresa"
+    contact: Contato
+    equipment: Equipamentos
+    home: Início
     jobs: Trabalhos Realizados
+    laboratory: Laboratório
+    reports: Relatórios
+    services: Serviços

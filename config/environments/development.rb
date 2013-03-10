@@ -42,8 +42,8 @@ Araguaia::Application.configure do
       :address => "smtp.gmail.com",
       :port => 587,
       :domain => "mail.google.com",
-      :user_name => "mgswolf@gmail.com",
-      :password => 'mgswolf123844'
+      :user_name => "dev.defindex@gmail.com",
+      :password => 'developer123844'
   }
 
   # add Pry support to rails console

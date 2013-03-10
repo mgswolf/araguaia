@@ -1,1 +1,77 @@
-esse arquivo é carregado dentro do yield
+<% content_for :main_menu do %>
+    <%= render 'shared/main-menu', actual_page: 'home' %>
+<% end %>
+
+<section class="cahamada-banner">
+<div class="limite">
+<div id="main_content" class="container">
+  <div class="row">
+    <div class="span12">
+      <div id="slides">
+        <div class="slides_container">
+          <% @banners.each do |banner| %>
+            <%= link_to image_tag(banner.cover(:medium)), '' %>
+          <% end %>
+        </div><!-- fim .slides_container -->
+        <a href="#" class="prev">&nbsp;</a>
+        <a href="#" class="next">&nbsp;</a>
+      </div><!-- fim .slides -->
+    </div><!-- fim span12 -->
+  </div><!-- fim .row -->
+</div><!-- fim .container -->
+</div><!-- fim .limite -->
+</section><!-- fim .banner-rotativo -->
+<section class="box-itens">
+  <div class="limite">
+    <h2 class="titulo-principal ico-servicos"><%= link_to t("home.services"), services_path, class: "link-servicos"  %></h2>
+    <ul class="listas">
+      <% @services.each do |service| %>
+          <li><%= service.title %></li>
+      <% end %>
+    </ul><!-- fim .listas -->
+    <ul class="lista-imagens">
+      <% @highlights.each do |highlight| %>
+          <li>
+           <%= link_to services_path do %>
+              <img src="/assets/img-conteudo-01.png" title="" alt="" />
+              <%= image_tag highlight.cover(:medium) %>
+              <span><%= highlight.title %></span>
+            <% end %>
+          </li>
+      <% end %>
+    </ul><!-- fim lista-imagens -->
+    <%= link_to t("home.see_more.services"), services_path, class: "veja-mais" %>
+  </div><!-- fim limite -->
+</section><!-- box-itens -->
+<section class="box-itens">
+  <div class="limite">
+    <h2 class="titulo-principal ico-laboratorio"><%= link_to t("home.laboratory"), laboratory_path, class: "link-servicos"  %></h2>
+    <ul class="listas">
+      <% @lab_items.each do |lab| %>
+          <li><%= lab.title %></li>
+      <% end %>
+    </ul><!-- fim .listas -->
+    <%= link_to t("home.see_more.laboratory"), laboratory_path, class: "veja-mais" %>
+  </div><!-- fim limite -->
+</section><!-- box-itens -->
+<section class="box-itens">
+  <div class="limite">
+    <h2 class="titulo-principal ico-trabalhos"><%= link_to t("home.jobs"), jobs_path, class: "link-servicos"  %></a></h2>
+
+    <div class="list_carousel">
+      <ul id="foo4">
+        <% @jobs.each do |job| %>
+            <li>
+              <%= link_to job_path(job) do %>
+                <%= image_tag job.cover(:medium) %>
+                <span><%= job.title %></span>
+              <% end %>
+            </li>
+        <% end %>
+      </ul><!-- fim .foo0 -->
+      <div class="clearfix"></div>
+    </div><!-- fim .list_carousel -->
+
+    <%= link_to t("home.see_more.jobs"), jobs_path, class: "veja-mais" %>
+  </div><!-- fim limite -->
+</section><!-- fim box-itens -->

@@ -1,0 +1,40 @@
+<% provide :title, t("titles.contact.new") %>
+<% provide :h1, t("titles.contact.new") %>
+<% content_for :main_menu do %>
+    <%= render 'shared/main-menu', actual_page: 'contact' %>
+<% end %>
+
+<h2 class="titulo-principal"><%= t("titles.contact.new") %></h2>
+<section class="content-form">
+  <%= form_for @contact, url: contact_path do |f| %>
+    <%= render "shared/error_messages", object: @contact %>
+    <fieldset>
+      <div class="col-form-a">
+        <div>
+          <%= f.label :name, "*#{t("labels.contact.name")}:" %>
+          <%= f.text_field :name, required: true %>
+        </div>
+        <div>
+          <%= f.label :phone, "*#{t("labels.contact.phone")}:" %>
+          <%= f.phone_field :phone, required: true %>
+        </div>
+      </div><!-- Fim div col-form-a -->
+      <div class="col-form-b">
+        <div>
+          <%= f.label :email, "*#{t("labels.contact.email")}:" %>
+          <%= f.email_field :email, required: true %>
+        </div>
+        <div>
+          <%= f.label :subject, "*#{t("labels.contact.subject")}:" %>
+          <%= f.text_field :subject, required: true %>
+        </div>
+      </div><!-- Fim div col-form-b -->
+      <div>
+        <%= f.label :body, "*#{t("labels.contact.body")}:" %>
+        <%= f.text_area :body, required: true %>
+      </div>
+      <span><%= t("helpers.all_*_needed") %></span>
+      <%= f.submit class: "button okay-colored", disable_with: "helpers.disable_with"  %>
+    </fieldset>
+  <% end %>
+</section><!-- Fim section conten-form -->

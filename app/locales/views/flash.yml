@@ -8,8 +8,8 @@ pt-BR:
     admin:
       banners:
         create:
-          alert: "Banner cadastrado com sucesso."
-          notice: "O Banner não pode se cadastrado verifique o preenchimento dos campos."
+          alert: "O Banner não pode se cadastrado verifique o preenchimento dos campos."
+          notice: "Banner cadastrado com sucesso."
         destroy:
           notice: "Banner excluído com sucesso."
         update:

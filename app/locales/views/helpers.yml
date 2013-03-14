@@ -11,3 +11,6 @@ pt-BR:
       contact:
         create: "Enviar"
     true: Sim
+    contacts:
+      new:
+        disable_with: "Enviando..."

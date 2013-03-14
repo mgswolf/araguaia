@@ -2,7 +2,7 @@ class Admin::BannersController < Admin::BaseController
   before_filter :get_banner, only: [:show, :edit, :update, :destroy]
 
   def index
-    @banners = Banner.all
+    @banners = Banner.paginate(page: params[:page])
   end
 
   def show

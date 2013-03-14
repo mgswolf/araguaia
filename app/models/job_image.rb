@@ -15,7 +15,7 @@
 class JobImage < ActiveRecord::Base
   belongs_to :job
   # attr_accessible :title, :body
-  validates :job, presence: true
+  #validates :job, presence: true
 
   attr_accessible :pic
   has_attached_file :pic, :styles => { :medium => "320x300>", :thumb => "100x100>" }

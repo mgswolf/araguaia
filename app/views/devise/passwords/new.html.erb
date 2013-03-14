@@ -3,7 +3,7 @@
 <% content_for :main_menu do %>
     <%= render 'shared/main-menu', actual_page: 'reports' %>
 <% end %>
-<h2><%= t("devise.passwords.new.title") %></h2>
+<h2 class="titulo-principal"><%= t("devise.passwords.new.title") %></h2>
 <section class="content-form box-login">
 <%= form_for(resource, :as => resource_name, :url => password_path(resource_name), :html => { :method => :post }) do |f| %>
   <fieldset>
@@ -13,7 +13,7 @@
        <%= f.email_field :email, :autofocus => true %>
     </div>
 
-    <div><%= f.submit t("devise.passwords.new.submit") %></div>
+    <div><%= f.submit t("devise.passwords.new.submit"), class: "button okay-colored", disable_with: t("helpers.contacts.new.disable_with") %></div>
    </fieldset>
 <% end %>
 

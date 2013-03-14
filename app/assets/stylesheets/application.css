@@ -236,11 +236,13 @@ hgroup h3{
 .listas li a,
 .listas-2 li a{
     width: 100%;
-    height: auto;
+    height: 20px;
     float: left;
     color: #333;
     text-decoration: none;
     font-size: 100%;
+    margin-bottom: 10px;
+    overflow: hidden;
 }
 .listas-2 li a{
     color: #333;
@@ -291,6 +293,9 @@ hgroup h3{
     -khtml-border-radius: 0px;
     -ms-border-radius: 0px;
     -o-border-radius: 0px;
+}
+.listas .job a{
+    height: auto;
 }
 
 /**** Fim listas ****/
@@ -362,7 +367,7 @@ hgroup h3{
 }
 .lista-imagens li a span{
     width: 300px;
-    height: 58px;
+    height: 48px;
     float: left;
     text-decoration: none;
     padding: 5px 10px;
@@ -643,6 +648,9 @@ hgroup h3{
 .textos-paginas a:hover{
     color: #333;
     text-decoration: underline;
+}
+.textos-paginas p {
+    margin: 0 0 10px 0;
 }
 
 /**** Fim textos-paginas ****/
@@ -1085,13 +1093,21 @@ hgroup h3{
 }
 .box-login{
     width: 500px;
-    height: 270px;
+    height: auto;
     float: none;
     margin: 0 auto;
     padding: 10px;
     border: 1px solid #ddd;
     overflow: hidden;
     background: #f9f9f9;
+    margin-bottom: 10px;
+}
+.box-login a{
+  color: #018bca;
+  text-decoration: none;
+}
+.box-login a:hover{
+  color: #333;
 }
 .content-form .col-form-a,
 .content-form .col-form-b{
@@ -1183,6 +1199,11 @@ hgroup h3{
 }
 .button:hover{
     background: #333;
+}
+
+.content-form .button:disabled,
+.content-form .button:focus{
+    background: #018bca;
 }
 /* Fim Configurações de formulários */
 

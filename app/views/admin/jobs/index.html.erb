@@ -31,7 +31,7 @@
   <%= render @jobs %>
   </tbody>
 </table>
-
+<%= will_paginate @jobs %>
 <%= link_to t("helpers.links.new"),
             new_admin_job_path,
             :class => 'btn btn-primary' %>

@@ -26,13 +26,13 @@
     <h2 class="titulo-principal ico-servicos"><%= link_to t("home.services"), services_path, class: "link-servicos"  %></h2>
     <ul class="listas">
       <% @services.each do |service| %>
-          <li><%= service.title %></li>
+          <li><%= link_to service.title, services_path(anchor: dom_id(service)) %></li>
       <% end %>
     </ul><!-- fim .listas -->
     <ul class="lista-imagens">
       <% @highlights.each do |highlight| %>
           <li>
-           <%= link_to services_path do %>
+           <%= link_to services_path(anchor: dom_id(highlight)) do %>
               <img src="/assets/img-conteudo-01.png" title="" alt="" />
               <%= image_tag highlight.cover(:medium) %>
               <span><%= highlight.title %></span>
@@ -48,7 +48,7 @@
     <h2 class="titulo-principal ico-laboratorio"><%= link_to t("home.laboratory"), laboratory_path, class: "link-servicos"  %></h2>
     <ul class="listas">
       <% @lab_items.each do |lab| %>
-          <li><%= lab.title %></li>
+          <li><%= link_to lab.title, laboratory_path(anchor: dom_id(lab)) %></li>
       <% end %>
     </ul><!-- fim .listas -->
     <%= link_to t("home.see_more.laboratory"), laboratory_path, class: "veja-mais" %>

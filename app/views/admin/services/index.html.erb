@@ -31,7 +31,7 @@
   <%= render @services %>
   </tbody>
 </table>
-
+<%= will_paginate @services %>
 <%= link_to t("helpers.links.new"),
             new_admin_service_path,
             :class => 'btn btn-primary' %>

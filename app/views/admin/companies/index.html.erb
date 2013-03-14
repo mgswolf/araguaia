@@ -31,7 +31,7 @@
   <%= render @companies %>
   </tbody>
 </table>
-
+<%= will_paginate @companies %>
 <%= link_to t("helpers.links.new"),
             new_admin_company_path,
             :class => 'btn btn-primary' %>

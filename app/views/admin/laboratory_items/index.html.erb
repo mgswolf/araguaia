@@ -31,7 +31,7 @@
   <%= render @laboratory_items %>
   </tbody>
 </table>
-
+<%= will_paginate @laboratory_items %>
 <%= link_to t("helpers.links.new"),
             new_admin_laboratory_item_path,
             :class => 'btn btn-primary' %>

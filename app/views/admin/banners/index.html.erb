@@ -18,6 +18,7 @@
   <%= render @banners %>
   </tbody>
 </table>
+<%= will_paginate @banners %>
 <%= link_to t("helpers.links.new"),
             new_admin_banner_path,
             :class => 'btn btn-primary' %>

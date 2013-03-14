@@ -34,7 +34,9 @@
         <%= f.text_area :body, required: true %>
       </div>
       <span><%= t("helpers.all_*_needed") %></span>
-      <%= f.submit class: "button okay-colored", disable_with: "helpers.disable_with"  %>
+      <%= f.submit class: "button okay-colored", disable_with: t("helpers.contacts.new.disable_with")  %>
     </fieldset>
   <% end %>
 </section><!-- Fim section conten-form -->
+
+

@@ -32,15 +32,16 @@
     </div>
 
     <div class="well">
+      <h4><%= t("admin.form.gallery") %></h4>
       <%= f.fields_for :job_images do |image_form| %>
           <%= image_tag image_form.object.pic.url(:thumb) unless image_form.object.new_record? %>
           <%= image_form.file_field :pic %>
           <span class="help-block"><%= t("helpers.size", size: "320x300 pixels") %></span>
-          <%= image_form.link_to_remove t('actions.remove'), class: "label label-important" %>
+          <%= image_form.link_to_remove t('actions.remove_image'), class: "label label-important" %>
           <hr />
       <% end %>
 
-      <p><%= f.link_to_add t('actions.add'), :job_images, class: "label label-success" %></p>
+      <p><%= f.link_to_add t('actions.add_image'), :job_images, class: "label label-success" %></p>
     </div>
 
 

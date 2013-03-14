@@ -45,7 +45,7 @@ end
 #Services
 puts '---Creating Services---'
 30.times do
-  jobs << FactoryGirl.create(:service,{
+    FactoryGirl.create(:service,{
       title: Faker::Lorem.sentence([*3..10].sample),
       caption: Faker::Lorem.sentence([*3..10].sample),
       description: Faker::Lorem.paragraphs([*1..5].sample).join("\n\n")
@@ -56,7 +56,7 @@ end
 puts '---Creating Reports---'
 30.times do
   time = Time.now.to_date
-  jobs << FactoryGirl.create(:report,{
+    FactoryGirl.create(:report,{
       title: Faker::Company.name,
       report_date: time,
       description: Faker::Lorem.paragraphs([*1..5].sample).join("\n\n"),

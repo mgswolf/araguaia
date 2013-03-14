@@ -1,4 +1,4 @@
-<h2 class="titulo-principal"><%= laboratory_item.title %></h2>
+<h2 class="titulo-principal" id="<%= dom_id(laboratory_item) %>"><%= laboratory_item.title %></h2>
 <div class="textos-paginas">
   <%= show_image(laboratory_item.cover(:medium)) %>
   <%= simple_format laboratory_item.description %>

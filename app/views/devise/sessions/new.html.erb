@@ -22,10 +22,10 @@
               <% end %>
             </div>
         <% end -%>
-        <span><%= t("helpers.all_needed") %></span>
+        <%= link_to t("devise.links.forgot"), new_password_path(resource_name) %>
         <%= f.submit t("reports.submit"), class: "button okay-colored", disable_with: t("helpers.disable_with") %>
       </fieldset>
   <% end %>
   <br />
-  <%= link_to t("devise.links.forgot"), new_password_path(resource_name) %>
+
 </section><!-- Fim section conten-form -->

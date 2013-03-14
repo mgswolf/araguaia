@@ -77,10 +77,12 @@ admin/application.js: admin/application-a5d6daeaee7024d995784f35d32bd879.js
 admin/application/index.js: admin/application-a5d6daeaee7024d995784f35d32bd879.js
 application.js: application-e2c3bcbb06f057317a4fd8bfe24af17b.js
 application/index.js: application-e2c3bcbb06f057317a4fd8bfe24af17b.js
-admin/application.css: admin/application-61bcd0ead9509b374e7778c245ad4191.css
-admin/application/index.css: admin/application-61bcd0ead9509b374e7778c245ad4191.css
-application.css: application-ef09e97a17fc8da607f86ad49296be26.css
-application/index.css: application-ef09e97a17fc8da607f86ad49296be26.css
+gallery.js: gallery-5863695f13587337274a75a1bbd24c60.js
+gallery/index.js: gallery-5863695f13587337274a75a1bbd24c60.js
+admin/application.css: admin/application-717be10d3bb3902cb9403e656a4207a1.css
+admin/application/index.css: admin/application-717be10d3bb3902cb9403e656a4207a1.css
+application.css: application-27c379052a47ceb9d260ee83000f2143.css
+application/index.css: application-27c379052a47ceb9d260ee83000f2143.css
 jquery.min.map: jquery.min-6c267bfd2b3f36e6edccb2e584934c1c.map
 jquery/index.min.map: jquery.min-6c267bfd2b3f36e6edccb2e584934c1c.map
 fontawesome-webfont.eot: fontawesome-webfont-635909f146e208b3509acdf3b154bf0d.eot

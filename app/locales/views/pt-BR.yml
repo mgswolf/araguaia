@@ -11,7 +11,9 @@ pt-BR:
     pt-BR: Português
   actions:
     add: "Adicionar "
+    add_image: "Adicionar Imagem"
     remove: "Remover"
+    remove_image: "Remover Imagem"
     create: "Criar"
     edit:   "Editar"
     send: "Enviar"
@@ -34,6 +36,8 @@ pt-BR:
         notice: "Conta desativada!"
         alert: "A conta não pode ser desativada"
     title: "Administração"
+    form:
+      gallery: "Galeria de imagens"
     comforts: "Itens de conforto"
     company: "Empresa, Textos"
     companies: "Empresa"

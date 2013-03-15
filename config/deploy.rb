@@ -1,6 +1,6 @@
 # -*- encoding : utf-8 -*-
 # General
-set :application, "araguaia.defindex"
+set :application, "arahidro"
 set :user, "railsapps"
 set :domain, "192.34.57.10"
 

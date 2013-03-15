@@ -1,6 +1,6 @@
 production:
   adapter: postgresql
   encoding: utf8
-  database: araguaia
+  database: arahidro
   username: araguaia
   password: dgkE2PQY

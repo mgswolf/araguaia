@@ -22,7 +22,7 @@ ssh_options[:forward_agent] = true
 require "bundler/capistrano"
 
 #Asset Pipeline
-load 'deploy/assets'
+#load 'deploy/assets'
 
 # Git
 #This example is using local repository
@@ -100,14 +100,13 @@ namespace :deploy do
   namespace :web do
     desc "Maintenance start"
     task :disable, :roles => :web do
-      on_rollback { run "rm #{shared_path}/system/maintenance.html" }
-      page = File.read("public/503.html")
-      put page, "#{shared_path}/system/maintenance.html", :mode => 0644
+      on_rollback { run "rm -f #{shared_path}/system/maintenance.html" }
+      run "ln -nfs /home/#{user}/sites/maintenance/maintenance.html #{shared_path}/system/maintenance.html"
     end
 
     desc "Maintenance stop"
     task :enable, :roles => :web do
-      run "rm #{shared_path}/system/maintenance.html"
+      run "rm -f #{shared_path}/system/maintenance.html"
     end
   end
 end

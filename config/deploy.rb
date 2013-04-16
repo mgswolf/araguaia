@@ -1,6 +1,5 @@
 # -*- encoding : utf-8 -*-
 require 'bundler/capistrano'
-require 'capistrano/ext/multistage'
 
 # General
 set :application, "arahidro"
@@ -23,7 +22,7 @@ ssh_options[:forward_agent] = true
 require "bundler/capistrano"
 
 #Asset Pipeline
-load 'deploy/assets'
+#load 'deploy/assets'
 
 # Git
 #This example is using local repository

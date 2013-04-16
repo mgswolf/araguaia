@@ -38,7 +38,6 @@ group :development do
   gem 'rb-inotify', :require => false
   gem 'libnotify'
   gem 'annotate', '~> 2.5.0'
-  gem 'debugger'
   gem 'thin'
   gem 'quiet_assets'
   gem "bullet"
@@ -67,4 +66,3 @@ group :production do
   gem 'pg'
   gem 'exception_notification'
 end
-

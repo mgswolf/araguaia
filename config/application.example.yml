@@ -1,0 +1,20 @@
+username: "admin"
+password: "secret"
+secret_token: "7ba5cb..."
+development:
+  host: "localhost:3000"
+  address: "smtp.gmail.com",
+  port: 587,
+  domain: "mail.google.com",
+  user_name: "example@gmail.com",
+  password: 'secret'
+test:
+  host: "test.local"
+production:
+  host: "araguaia.com"
+  address: "smtp.gmail.com",
+  port: 587,
+  domain: "mail.google.com",
+  user_name: "dev.example@gmail.com",
+  password: 'secret'
+

@@ -35,15 +35,13 @@ Araguaia::Application.configure do
   # Expands the lines which load the assets
   config.assets.debug = true
 
-  config.action_mailer.default_url_options = { :host => 'localhost:3000' }
-
   config.action_mailer.smtp_settings = {
       :enable_starttls_auto => true,
-      :address => "smtp.gmail.com",
-      :port => 587,
-      :domain => "mail.google.com",
-      :user_name => "dev.defindex@gmail.com",
-      :password => 'developer123844'
+      :address => CONFIG[:address],
+      :port => CONFIG[:port],
+      :domain => CONFIG[:domain],
+      :user_name => CONFIG[:user_name],
+      :password => CONFIG[:password]
   }
 
   # add Pry support to rails console

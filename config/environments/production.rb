@@ -65,15 +65,14 @@ Araguaia::Application.configure do
   # with SQLite, MySQL, and PostgreSQL)
   # config.active_record.auto_explain_threshold_in_seconds = 0.5
 
-  config.action_mailer.default_url_options = { :host => 'araguaia.defindex.com.br' }
 
   config.action_mailer.smtp_settings = {
       :enable_starttls_auto => true,
-      :address => "smtp.gmail.com",
-      :port => 587,
-      :domain => "mail.google.com",
-      :user_name => "dev.defindex@gmail.com",
-      :password => 'developer123844'
+      :address => CONFIG[:address],
+      :port => CONFIG[:port],
+      :domain => CONFIG[:domain],
+      :user_name => CONFIG[:user_name],
+      :password => CONFIG[:password]
   }
 
   config.middleware.use ExceptionNotifier,
